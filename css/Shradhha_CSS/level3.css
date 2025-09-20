@@ -1,0 +1,9 @@
+#box1{
+    width:100px;
+    height: 100px;
+    background-image: url("/Portfolio/Shabana_Pic.jpg");
+    background-size:cover;
+    position:fixed;
+    top:50px;
+    right:0px;
+}

@@ -1,0 +1,253 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <meta name="description" content="Learning CSS Now with html">
+        <title>CSS Tutor</title>
+        <style>
+            div,span{
+                color:red;
+                background-color:yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            Hello, I am Shabana Mohamad!!
+        </div>
+        <span>
+             Hi, How are you Shabana...
+        </span>
+    </body>
+</html> -->
+
+<!--TYpes of CSS USES-->
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <meta name="description" content="Learning CSS Now with html">
+        <title>CSS Tutor</title>
+        <style>
+            div{
+                color:red;
+                background-color:yellow;
+            }
+        </style>
+        <link rel="stylesheet" href="style1.css">
+    </head>
+    <body>
+        <h1 style="color:blue; background-color:violet;">Hello, Nice to Meet You</h1>
+        <div>
+            Hello, I am Shabana Mohamad!!
+        </div>
+        <span>
+             Hi, How are you Shabana...
+        </span>
+    </body>
+</html> -->
+
+<!--TYpes of Selectors-->
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <meta name="description" content="Learning CSS Now with html">
+        <title>CSS Tutor</title>
+        <style>
+            /* ELement Selector */
+            div{
+                /* background-color: red; */
+            }
+            /* Attribute Selector */
+            [data-x = a]{
+                  background-color: red;
+            }
+            /* Class Selector */
+            .red{
+                /* background-color: red; */
+            }
+            /*Id Selector */
+            #green{
+                /* background-color: green; */
+            }
+            /* Child Selector */
+            div > p{ /* it applies only when div is having p and p is not under any other element*/
+                color:blue;
+                background-color: brown;
+            }
+            /* Descendant Selector */
+            div p{ /*Even though p is in another tag it works*/
+                color:blue;
+                background-color: brown;
+            }
+            /* Universal Selector */
+            *{ /*Selects all the elements*/
+                margin:0;
+                padding:0;
+            }
+            /*Pseudo Selector*/
+            a:visited{
+                color:yellow;
+            }
+            a:link{
+                color:green;
+            }
+            a:active{
+                background-color: red;
+            }
+            a:hover{
+                background-color: aqua;
+            }
+             p:first-child{
+                background-color: yellow;
+            }
+
+        </style>
+        
+    </head>
+    <body>
+       <main class="one">
+        <p>I am first</p>
+        <p> I am Second</p>
+       </main>
+       <div class="red" data-x="a">
+        I am a div
+        <article>
+            <p>I am a para inside div</p>
+            
+        </article>
+       </div>
+       <div id="green">
+         I am another div
+       </div>
+       <a href="https://www.google.com">Go to Google</a>
+       <a href="https://www.facebook.com">Got to Facebook</a>
+    </body>
+</html> -->
+
+<!--CSS BOX Model-->
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Boxmodel</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            background-color: aqua;
+        }
+
+        .box1 {
+            color: yellow;
+            padding: 10px;
+            margin: 35px;
+            border: 2px solid blue;
+            height: 200px;
+            box-sizing: border-box;
+        }
+
+        .box2 {
+            color: red;
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid black;
+            height: 200px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">I am a box</div>
+    <div class="box box2">I am another box</div>
+</body>
+
+
+</html> -->
+
+<!--FONTS-->
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS FONTS</title>
+</head>
+<style>
+     @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Poppins:wght@300&display=swap');
+    h1 {
+        font-family: 'Times New Roman', Times, serif
+    }
+
+    p {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: italic;
+        font-weight: 500;
+        text-decoration: underline;
+        font-size: 32px;
+        line-height: 2px;
+        /* the space btw lines*/
+        ;
+        letter-spacing: 2px;
+    }
+    h2{
+        text-align:center;
+        text-transform: capitalize;
+        text-transform: uppercase;
+        text-transform: lowercase;
+        text-decoration: underline;
+        text-decoration-style:dotted;
+        text-decoration-color: blue;
+        text-decoration-thickness: 7px;
+        text-indent: 45px;
+
+    }
+    .lorem{
+        border:2px solid red;
+        width:145px;
+        word-break:break-all;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    h3{
+        color:red;
+        color:#0bee0b;
+        color:rgb(76,125,59);
+        color:rgba(255,22,5,0.175);
+        color:hsl(130,61%,44%);
+        background-color: rgb(76,125,59);
+    }
+</style>
+
+<body>
+    <div>
+        <h1>Fonts</h1>
+        <h2>about Fonts</h2>
+        <p>This is a video on fonts</p>
+        <p class="lorem">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae doloribus quibusdam unde, et asperiores
+            dolores aut, ut perferendis maxime nemo nam impedit consequuntur.</p>
+
+    <h3>Lets learn about colors</h3>
+    <p>
+        Color can be represented in:
+        <ol>
+            <li>Color Keywords</li>
+            <li>Hex Color Code</li>
+            <li>RGB</li>
+            <li>RGBA</li>
+            <li>HSL</li>
+        </ol>
+    </p>
+    </div>
+</body>
+
+</html> -->

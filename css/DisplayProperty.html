@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Display Property</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            border: 2px solid blue;
+            /* display: inline-block; */
+            padding: 45px;
+            /*when it is in inline the padding and margin oesn/t affect on top and even width doesn.t apply at all for any directon*/
+            margin: 34px;
+            width: 344px;
+            display: flex;
+            justify-content: center;
+        }
+        .box1{
+            /* display: none;The block will be removed and even space for that */
+            /* visibility: hidden;The block will be removed but even space for that remains */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">
+        I am a box
+    </div>
+    <div class="box">
+        I am a girl
+    </div>
+    <span>Hello excuse</span>
+    <span>me</span>
+</body>
+
+</html>
