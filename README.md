@@ -1,2 +1,3 @@
 # apnacollege-demo
-This is my learning Repository
+This is my learning Repository.
+Author - Shabana Mohamad
